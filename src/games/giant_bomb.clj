@@ -2,8 +2,7 @@
   (:require
    [clj-http.client :as client]
    [clojure.java.io :as io]
-   [jsonista.core :as json]
-   [hickory.core :as html]))
+   [jsonista.core :as json]))
 
 (def config
   (read-string (slurp (io/resource "config.edn"))))

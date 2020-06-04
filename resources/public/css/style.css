@@ -1,0 +1,238 @@
+@import "normalize.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya Sans', Georgia, serif;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    border-radius: 8px;
+}
+
+/* search form */
+
+.search {
+    position: relative;
+}
+
+.search .info {
+    position: absolute;
+    bottom: -1.2rem;
+    right: 0;
+}
+
+.search-form {
+    display: flex;
+}
+
+.error {
+    color: #ff6961;
+}
+
+.msg {
+    color: #aec6cf;
+}
+
+.search-form input {
+    padding: .5rem;
+}
+
+.search-form .search-field {
+    flex: 1;
+    background-color: #EEE;
+}
+
+.search-form .search-field,
+.search-form .search-button {
+    border: 1px solid #CCC;
+}
+
+.search-form .search-field {
+    border-radius: 8px 0 0 8px;
+    border-right: 0;
+}
+
+.search-form .search-button {
+    border-radius: 0 8px 8px 0;
+    border-left: 0;
+}
+
+/* search results */
+
+.no-image {
+    background-color: #999;
+    color: white;
+}
+
+.games {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.game .no-image {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0;
+}
+
+.game h4 {
+    font-size: 1.4rem;
+    margin: .2rem;
+}
+
+.game h4 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.games .game {
+    width: 100%;
+}
+
+@media(min-width: 700px) {
+    .games .game {
+        width: 32%;
+    }
+}
+
+.game-image {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+.game h5 {
+    font-size: 1rem;
+    margin: .2rem;
+    padding: 0;
+}
+
+.game .platforms {
+    font-size: .8rem;
+}
+
+.game .deck {
+    text-align: justify;
+    padding: .5rem;
+    margin-top: 0;
+}
+
+.game .add-to-cart,
+.game .remove-from-cart{
+    margin: auto auto 2rem auto;
+    width: 50%;
+}
+
+.add-to-cart {
+    background: linear-gradient(#aec6cf, white);
+}
+
+.remove-from-cart {
+    background: linear-gradient(#ff6961, white);
+}
+
+/* checkout */
+
+.checkout-page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    list-style-type: none;
+}
+
+.checkout-item:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
+.checkout .checkout-item {
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity {
+    display: inline-block;
+    width: 2rem;
+}
+
+.checkout-item .no-image {
+    padding: 1rem;
+}
+
+.checkout-item .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.checkout-item .item-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* cart navigation */
+
+.cart-nav {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+
+/* sizes */
+
+.thirty {
+    width: 30%;
+}
+
+.fifty {
+    width: 50%;
+}
+
+.twenty {
+    width: 20%;
+}
+
+.fourthy {
+    width: 40%;
+}
+
+.five {
+    width: 5%;
+}
+
+.fifteen {
+    width: 15%;
+}
+
+.ten {
+    width: 10%;
+}
